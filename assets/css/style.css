@@ -11,6 +11,13 @@
   text-align: -webkit-center;
   display: block; }
 
+.navbar-default {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important; }
+
+.navbar li > a {
+  font-size: 13px; }
+
 .body__auth ul.nav .nav-pills.nav-right {
   float: right; }
 .body__auth ul.nav li > a {
