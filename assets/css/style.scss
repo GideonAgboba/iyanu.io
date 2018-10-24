@@ -273,3 +273,40 @@ $platformSecondary: #1a73e8;
 		}
 	}
 }
+.body__allTask{
+	    background-color: #f5f5f5ab;
+	    .heading_video{
+	    	font-size: 17px;
+    		margin: 1.4% 0%;
+    		button{
+    			float: right;
+			    background: red;
+			    border: none;
+			    border-radius: 1px;
+
+    		}
+	    }
+	section.market__fund .well {
+	    padding: 0 !important;
+	    border-radius: 1px;
+	    box-shadow: none;
+	    border: none;
+	}
+	section.market__fund .col-md-2 {
+	    padding: 2px;
+	}
+	section.market__fund {
+	    padding: 10px 12.3%;
+	}
+	.well{
+		background:transparent !important;
+		p {
+		    margin-bottom: 0;
+		    font-size: 12px;
+		    color: #a2a2a2;
+		}
+		h3 {
+		    font-size: 14px;
+		}
+	}
+}

@@ -186,4 +186,32 @@
     font-size: 12px;
     color: #7b7b8b; }
 
+.body__allTask {
+  background-color: #f5f5f5ab; }
+  .body__allTask .heading_video {
+    font-size: 17px;
+    margin: 1.4% 0%; }
+    .body__allTask .heading_video button {
+      float: right;
+      background: red;
+      border: none;
+      border-radius: 1px; }
+  .body__allTask section.market__fund .well {
+    padding: 0 !important;
+    border-radius: 1px;
+    box-shadow: none;
+    border: none; }
+  .body__allTask section.market__fund .col-md-2 {
+    padding: 2px; }
+  .body__allTask section.market__fund {
+    padding: 10px 12.3%; }
+  .body__allTask .well {
+    background: transparent !important; }
+    .body__allTask .well p {
+      margin-bottom: 0;
+      font-size: 12px;
+      color: #a2a2a2; }
+    .body__allTask .well h3 {
+      font-size: 14px; }
+
 /*# sourceMappingURL=style.css.map */
