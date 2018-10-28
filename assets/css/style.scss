@@ -6,7 +6,7 @@ $platform_font: 'Roboto',
 sans-serif;
 
 $platformcolor : #fff;
-$platformSecondary: #1a73e8;
+$platformSecondary: #48adf5;
 
 // =======================
 // Start Global Declearatives
@@ -28,6 +28,9 @@ $platformSecondary: #1a73e8;
 .navbar li > a{
    font-size:13px;
 }
+ .col-md-6 {
+    	padding: 22px 5%;
+    }
 
 // End Global Declearatives
 // ===================
@@ -94,7 +97,7 @@ $platformSecondary: #1a73e8;
 	    margin-top: 12%;
       	 button {
 		    float: right;
-		    background: #1a73e8;
+		    background: #48adf5;
 		    border: none;
 		    margin-top: -7px;
 		    font-weight: 600;
@@ -104,6 +107,7 @@ $platformSecondary: #1a73e8;
       }
 
     }
+   
     input {
 	    // margin: 40px 25px;
 	    width: 100%;
