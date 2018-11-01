@@ -32,9 +32,10 @@
 </head>
 <body class="body__allTask">
 	<header>
-		<nav class="navbar navbar-default navbar-static-top">
+		<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
+		    	<a href="#" class="navbar-brand"><img src="assets/img/Banner.PNG" alt="" class="img-responsive" style="height: 58px; margin-top: -11px;"></a>
 		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
@@ -42,11 +43,13 @@
 		      </button>
 		    </div>
 		    <div class="collapse navbar-collapse" id="myNavbar">
-		      <ul class="nav navbar-nav">
-		        <li><a href="index.html">Task 1</a></li>
-		        <li><a href="post_details.html">Task 2</a></li>
-		        <li><a href="youtubeUpload.html">Task 3</a></li>
-		        <li><a href="mixTask.html">Task 4</a></li>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="index.html">Home</a></li>
+		        <li><a href="mixTask.html">My Videos</a></li>
+
+		        <li><a href="register.html">Trending</a></li>
+		        <li><a href="mixTask.html">Featured</a></li>
+		         <li><a href="youtubeUpload.html"><i class="ion-upload" style="font-size: 17px;"></i></a></li>
 		      </ul>
 		    </div>
 		  </div>
@@ -55,12 +58,61 @@
 	<section class="market__fund">
 		<div class="container-fluid">
 			<div class="row">
-				<h4 class="heading_video">Trending</h4>
+				<div class="col-md-2">
+					<div class="left__well" style="background: #f5f5f5;">
+						<p><a href="#"><i class="ion-home"></i> Home</a></p>
+						<p><a href="#"><i class="ion-fireball"></i> Trending</a></p>
+						<p><a href="#"><i class="ion-ios-albums-outline"></i> Subscription</a></p>
+						<hr>
+						<p><b>LIBARY</b></p>
+						<p><a href="#"><i class="ion-ios-reload"></i> History</a></p>
+						<p><a href="#"><i class="ion-clock"></i> Watch Later</a></p>
+						<p><a href="#"><i class="ion-thumbsup"></i> Liked Videos</a></p>
+						<p><a href="#"><i class="ion-ios-list-outline"></i> Schools</a></p>
+						<p><a href="#"><i class="ion-model-s"></i> Tours</a></p>
+						<hr>
+						
+						<p><a href="#"><img src="assets/img/pug-tilt-960x540.jpg" alt="" style="height: 27px; width: 27px; border-radius: 50%;">&nbsp;&nbsp; freecodecamp...</a></p>
+						<p><a href="#"><img src="assets/img/pug-tilt-960x540.jpg" alt="" style="height: 27px; width: 27px; border-radius: 50%;">&nbsp;&nbsp; Iyanu IO...</a></p>
+						<p><a href="#"><img src="assets/img/pug-tilt-960x540.jpg" alt="" style="height: 27px; width: 27px; border-radius: 50%;">&nbsp;&nbsp; Dogs And Banks...</a></p>
+						<p><a href="#"><img src="assets/img/pug-tilt-960x540.jpg" alt="" style="height: 27px; width: 27px; border-radius: 50%;">&nbsp;&nbsp; Realist YYY..</a></p>
+						<p><a href="#"><img src="assets/img/pug-tilt-960x540.jpg" alt="" style="height: 27px; width: 27px; border-radius: 50%;">&nbsp;&nbsp; Free Camps...</a></p>
+						
+						<!-- <p><a href="#"><i class="ion-ios-albums-outline"></i> Subscription</a></p> -->
+					</div>
+				</div>
 				<!-- <div class="col-md-4"></div> -->
+				<div class="col-md-10">
+					<br><br><br>
+					<!-- <h3 class="text-center" style="font-size: 28px;font-weight: 100;margin-bottom: 3%; text-transform: uppercase;margin-top: 4%;">Welcome To <span style="color: #3fa9f5;">Adugbomi</span> , <b>JOHN SEYE</b></h3> -->
+					<p><b style="text-transform: uppercase;">Welcome to  <span style="color: #3fa9f5;">Adugbomi</span></b> <span style="float: right; font-size: 13px;"><i class="ion-person" style="border: 1px solid black; border-radius: 50%; margin-right: 10px; padding: 3px 6px; color: #929292;"></i>John Seye</span></p><br>
+					<div class="row">
+						<div class="col-md-2"></div>
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-md-9">
+									<input type="text" class="form-control" placeholder="Search Here" style="    box-shadow: none;">
+								</div>
+								<div class="col-md-3">
+									<button class="btn btn-info btn-block" style="border: none; background: #3fa9f5;">Search</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2"></div>
+					</div><br>
+					<div class="framers">
+						<div id="chartdiv"></div>
+					</div>
+					<h4 class="heading_video">Trending</h4>
+					<div class="row">
 				<div class="col-md-2">
 					<div class="well">
 						<div class="img-center padd_up">
-							<img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
+							<video width="100%" autoplay>
+							  <source src="assets/img/mov_bbb.mp4" type="video/mp4">
+							  <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+							  Your browser does not support HTML5 video.
+							</video>
 						</div>
 						<h3>American Got Talent Winner Shimlly With Jimmy...</h3>
 						<p>Marc Anthony</p>
@@ -79,9 +131,23 @@
 				</div>
 				<div class="col-md-2">
 					<div class="well">
-						<div class="img-center padd_up">
-							<img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
-						</div>
+						<video width="100%" controls>
+							  <source src="assets/img/mov_bbb.mp4" type="video/mp4">
+							  <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+							  Your browser does not support HTML5 video.
+							</video>
+						<h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+						<p>Marc Anthony</p>
+						<p>4.3M Views . 1 Day Ago</p>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="well">
+						<video width="100%" controls>
+							  <source src="assets/img/mov_bbb.mp4" type="video/mp4">
+							  <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+							  Your browser does not support HTML5 video.
+							</video>
 						<h3>American Got Talent Winner Shimlly With Jimmy...</h3>
 						<p>Marc Anthony</p>
 						<p>4.3M Views . 1 Day Ago</p>
@@ -99,19 +165,11 @@
 				</div>
 				<div class="col-md-2">
 					<div class="well">
-						<div class="img-center padd_up">
-							<img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
-						</div>
-						<h3>American Got Talent Winner Shimlly With Jimmy...</h3>
-						<p>Marc Anthony</p>
-						<p>4.3M Views . 1 Day Ago</p>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="well">
-						<div class="img-center padd_up">
-							<img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
-						</div>
+						<video width="100%" controls>
+							  <source src="assets/img/mov_bbb.mp4" type="video/mp4">
+							  <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+							  Your browser does not support HTML5 video.
+							</video>
 						<h3>American Got Talent Winner Shimlly With Jimmy...</h3>
 						<p>Marc Anthony</p>
 						<p>4.3M Views . 1 Day Ago</p>
@@ -134,9 +192,23 @@
 				</div>
 				<div class="col-md-2">
 					<div class="well">
-						<div class="img-center padd_up">
-							<img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
-						</div>
+						<video width="100%" controls>
+							  <source src="assets/img/mov_bbb.mp4" type="video/mp4">
+							  <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+							  Your browser does not support HTML5 video.
+							</video>
+						<h3>American Got Talent Winner Shimlly With Jimmy...</h3>
+						<p>Marc Anthony</p>
+						<p>4.3M Views . 1 Day Ago</p>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="well">
+						<video width="100%" autoplay>
+							  <source src="assets/img/mov_bbb.mp4" type="video/mp4">
+							  <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+							  Your browser does not support HTML5 video.
+							</video>
 						<h3>American Got Talent Winner Shimlly With Jimmy...</h3>
 						<p>Marc Anthony</p>
 						<p>4.3M Views . 1 Day Ago</p>
@@ -154,19 +226,11 @@
 				</div>
 				<div class="col-md-2">
 					<div class="well">
-						<div class="img-center padd_up">
-							<img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
-						</div>
-						<h3>American Got Talent Winner Shimlly With Jimmy...</h3>
-						<p>Marc Anthony</p>
-						<p>4.3M Views . 1 Day Ago</p>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="well">
-						<div class="img-center padd_up">
-							<img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
-						</div>
+						<video width="100%" controls>
+							  <source src="assets/img/mov_bbb.mp4" type="video/mp4">
+							  <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+							  Your browser does not support HTML5 video.
+							</video>
 						<h3>American Got Talent Winner Shimlly With Jimmy...</h3>
 						<p>Marc Anthony</p>
 						<p>4.3M Views . 1 Day Ago</p>
@@ -189,9 +253,11 @@
 				<!-- <div class="col-md-4"></div> -->
 				<div class="col-md-2">
 					<div class="well">
-						<div class="img-center padd_up">
-							<img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
-						</div>
+						<video width="100%" autoplay>
+							  <source src="assets/img/mov_bbb.mp4" type="video/mp4">
+							  <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+							  Your browser does not support HTML5 video.
+							</video>
 						<h3>American Got Talent Winner Shimlly With Jimmy...</h3>
 						<p>Marc Anthony</p>
 						<p>4.3M Views . 1 Day Ago</p>
@@ -219,9 +285,11 @@
 				</div>
 				<div class="col-md-2">
 					<div class="well">
-						<div class="img-center padd_up">
-							<img src="assets/img/pug-tilt-960x540.jpg" alt="" class="img-responsive">
-						</div>
+						<video width="100%" controls>
+							  <source src="assets/img/mov_bbb.mp4" type="video/mp4">
+							  <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+							  Your browser does not support HTML5 video.
+							</video>
 						<h3>American Got Talent Winner Shimlly With Jimmy...</h3>
 						<p>Marc Anthony</p>
 						<p>4.3M Views . 1 Day Ago</p>
@@ -249,11 +317,125 @@
 				</div>
 			</div>
 		</div>
+		</div>
+		</div>
 	</section>
 	<footer>
 		<script src="assets/js/jqey.js"></script>
 		<script src="assets/js/bootstrap.js"></script>
 		<script src="assets/js/jqey.js"></script>
+		<!-- <script src="https://www.amcharts.com/lib/3/ammap.js"></script> -->
+<script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+<script>
+/**
+ * SVG path for target icon
+ */
+var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z M9,15.93 c-3.83,0-6.93-3.1-6.93-6.93S5.17,2.07,9,2.07s6.93,3.1,6.93,6.93S12.83,15.93,9,15.93 M12.5,9c0,1.933-1.567,3.5-3.5,3.5S5.5,10.933,5.5,9S7.067,5.5,9,5.5 S12.5,7.067,12.5,9z";
+
+/**
+ * SVG path for plane icon
+ */
+var planeSVG = "m2,106h28l24,30h72l-44,-133h35l80,132h98c21,0 21,34 0,34l-98,0 -80,134h-35l43,-133h-71l-24,30h-28l15,-47";
+
+/**
+ * Create the map
+ */
+var map = AmCharts.makeChart( "chartdiv", {
+  "type": "map",
+"theme": "none",
+
+
+  "dataProvider": {
+    "map": "worldLow",
+    "zoomLevel": 3.5,
+    "zoomLongitude": -55,
+    "zoomLatitude": 42,
+
+    "lines": [ {
+      "id": "line1",
+      "arc": -0.85,
+      "alpha": 0.3,
+      "latitudes": [ 48.8567, 43.8163, 34.3, 23 ],
+      "longitudes": [ 2.3510, -79.4287, -118.15, -82 ]
+    }, {
+      "id": "line2",
+      "alpha": 0,
+      "color": "#000000",
+      "latitudes": [ 48.8567, 43.8163, 34.3, 23 ],
+      "longitudes": [ 2.3510, -79.4287, -118.15, -82 ]
+    } ],
+    "images": [ {
+      "svgPath": targetSVG,
+      "title": "Paris",
+      "latitude": 48.8567,
+      "longitude": 2.3510
+    }, {
+      "svgPath": targetSVG,
+      "title": "Toronto",
+      "latitude": 43.8163,
+      "longitude": -79.4287
+    }, {
+      "svgPath": targetSVG,
+      "title": "Los Angeles",
+      "latitude": 34.3,
+      "longitude": -118.15
+    }, {
+      "svgPath": targetSVG,
+      "title": "Havana",
+      "latitude": 23,
+      "longitude": -82
+    }, {
+      "svgPath": planeSVG,
+      "positionOnLine": 0,
+      "color": "#000000",
+      "alpha": 0.1,
+      "animateAlongLine": true,
+      "lineId": "line2",
+      "flipDirection": true,
+      "loop": true,
+      "scale": 0.03,
+      "positionScale": 1.3
+    }, {
+      "svgPath": planeSVG,
+      "positionOnLine": 0,
+      "color": "#585869",
+      "animateAlongLine": true,
+      "lineId": "line1",
+      "flipDirection": true,
+      "loop": true,
+      "scale": 0.03,
+      "positionScale": 1.8
+    } ]
+  },
+
+  "areasSettings": {
+    "unlistedAreasColor": "#8dd9ef"
+  },
+
+  "imagesSettings": {
+    "color": "#585869",
+    "rollOverColor": "#585869",
+    "selectedColor": "#585869",
+    "pauseDuration": 0.2,
+    "animationDuration": 2.5,
+    "adjustAnimationSpeed": true
+  },
+
+  "linesSettings": {
+    "color": "#585869",
+    "alpha": 0.4
+  },
+
+  "export": {
+    "enabled": true
+  }
+
+} );
+</script>
 	</footer>
 	
 </body>
