@@ -238,4 +238,13 @@
     .body__allTask .well h3 {
       font-size: 14px; }
 
+.editpage input {
+  margin-bottom: 3%;
+  box-shadow: none;
+  padding: 20px 15px; }
+.editpage textarea {
+  margin-bottom: 3%;
+  box-shadow: none;
+  padding: 20px 15px; }
+
 /*# sourceMappingURL=style.css.map */
