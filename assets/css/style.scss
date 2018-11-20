@@ -35,7 +35,16 @@ $platformSecondary: #48adf5;
  .col-md-6 {
     	padding: 22px 5%;
     }
-
+    .wid100{
+    	width: 100% !important;
+    }
+    .wid75{
+    	width: 75% !important;
+    }
+	.flt_right{
+		margin-top: -20em;
+   	 	float: right;
+	}
 // End Global Declearatives
 // ===================
 
@@ -355,4 +364,36 @@ p {
 		box-shadow: none;
 		padding: 20px 15px;
 	}
+}
+.market__fun {
+    padding: 10px 50px;
+    .otherVioes{
+     p {
+    	font-size: 12px;
+	}
+
+	 img {
+	    float: left;
+	    width: 50%;
+	    margin-right: 12px;
+	}
+	 h3 {
+	    font-size: 15px;
+	    margin-bottom: 4px;
+	}
+}
+.subscribe {
+	p{
+		margin-top: 1px;
+	}
+	img{
+	    height: 50px;
+    width: 50px;
+    float: left;
+    padding: 5px;
+        margin-right: 1%;
+    border-radius: 50%;
+    border: 1px solid #3fa9f5;
+}
+}
 }

@@ -24,6 +24,16 @@
 .col-md-6 {
   padding: 22px 5%; }
 
+.wid100 {
+  width: 100% !important; }
+
+.wid75 {
+  width: 75% !important; }
+
+.flt_right {
+  margin-top: -20em;
+  float: right; }
+
 .body__auth ul.nav .nav-pills.nav-right {
   float: right; }
 .body__auth ul.nav li > a {
@@ -246,5 +256,27 @@
   margin-bottom: 3%;
   box-shadow: none;
   padding: 20px 15px; }
+
+.market__fun {
+  padding: 10px 50px; }
+  .market__fun .otherVioes p {
+    font-size: 12px; }
+  .market__fun .otherVioes img {
+    float: left;
+    width: 50%;
+    margin-right: 12px; }
+  .market__fun .otherVioes h3 {
+    font-size: 15px;
+    margin-bottom: 4px; }
+  .market__fun .subscribe p {
+    margin-top: 1px; }
+  .market__fun .subscribe img {
+    height: 50px;
+    width: 50px;
+    float: left;
+    padding: 5px;
+    margin-right: 1%;
+    border-radius: 50%;
+    border: 1px solid #3fa9f5; }
 
 /*# sourceMappingURL=style.css.map */
