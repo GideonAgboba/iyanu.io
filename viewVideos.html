@@ -110,21 +110,22 @@
 			                <!-- Fallback for browsers that don't support the <video> element -->
 			                <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
 			            </video>
-			  
-						  <div class="actions">
-						    <button type="button" class="btn js-play">Play</button>
-						    <button type="button" class="btn js-pause">Pause</button>
-						    <button type="button" class="btn js-stop">Stop</button>
-						    <button type="button" class="btn js-rewind">Rewind</button>
-						    <button type="button" class="btn js-forward">Forward</button>
+			  				<br>
+						  <div class="actions text-center">
+						    <!-- <button type="button" class="btn js-play">Play</button> -->
+						    <!-- <button type="button" class="btn js-pause">Pause</button> -->
+						    <button type="button" class="btn js-stop"><i class="ion-stop"></i></button>
+						    <button type="button" class="btn js-rewind"><i class="ion-ios-rewind"></i></button>
+						    <button type="button" class="btn js-forward"><i class="ion-ios-fastforward"></i></button>
+						    <button type="button" class="btn theratr">Theater Mode</button>
 						  </div>
 
-							<p><i class="theratr ion-arrow-expand" style="      padding: 10px 20px;
+							<!-- <p><i class="theratr ion-arrow-expand" style="      padding: 10px 20px;
     background: #48acf5;
     border-radius: 50px;
     margin-top: 1px;
     float: right;
-    color: #fff;"></i></p>
+    color: #fff;"></i></p> -->
 							<!-- <div class="row"> -->
 								<div class="col-md-12" id="shifter">
 									<h3>American Got Talent Winner Shimlly With Jimmy castron on stage</h3><br>
@@ -241,6 +242,7 @@
 <script src="https://cdn.plyr.io/3.4.6/plyr.js"></script>
 <script>
 	$('.theratr').click(function(){
+		$('.theratr').toggleClass('red')
 		$('#t-mode').toggleClass('wid100')
 		$('#text_match').toggleClass('flt_right')
 		$('#shifter').toggleClass('wid75')

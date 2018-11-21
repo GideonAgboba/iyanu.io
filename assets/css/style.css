@@ -34,6 +34,14 @@
   margin-top: -20em;
   float: right; }
 
+.red {
+  background: #17d217 !important;
+  color: #fff !important; }
+
+.theratr {
+  background: red;
+  color: #fff; }
+
 .body__auth ul.nav .nav-pills.nav-right {
   float: right; }
 .body__auth ul.nav li > a {
