@@ -28,6 +28,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.4.6/plyr.css">
 	
 </head>
 <body class="body__allTask">
@@ -102,11 +103,22 @@
 				<div class="col-md-12 editpag">
 					<div class="row">
 						<div class="col-md-9" id="t-mode">
-							<video muted width="100%" controls>
-							  <source src="assets/img/mov_bbb.mp4" type="video/mp4">
-							  <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
-							  Your browser does not support HTML5 video.
-							</video>
+							<video controls crossorigin playsinline poster="" id="player">
+			                <!-- Video files -->
+			                <source src="assets/img/mov_bbb.mp4" type="video/mp4">
+
+			                <!-- Fallback for browsers that don't support the <video> element -->
+			                <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
+			            </video>
+			  
+						  <div class="actions">
+						    <button type="button" class="btn js-play">Play</button>
+						    <button type="button" class="btn js-pause">Pause</button>
+						    <button type="button" class="btn js-stop">Stop</button>
+						    <button type="button" class="btn js-rewind">Rewind</button>
+						    <button type="button" class="btn js-forward">Forward</button>
+						  </div>
+
 							<p><i class="theratr ion-arrow-expand" style="      padding: 10px 20px;
     background: #48acf5;
     border-radius: 50px;
@@ -203,6 +215,7 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing...</p>
 								<small>100k <b style="float: right;">1 day ago</b></small>
 								</div>
+
 							</div>
 						</div>
 
@@ -223,13 +236,52 @@
 <script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
 <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
 <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+
 <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+<script src="https://cdn.plyr.io/3.4.6/plyr.js"></script>
 <script>
 	$('.theratr').click(function(){
 		$('#t-mode').toggleClass('wid100')
 		$('#text_match').toggleClass('flt_right')
 		$('#shifter').toggleClass('wid75')
 	})
+	document.addEventListener('DOMContentLoaded', () => { 
+  // This is the bare minimum JavaScript. You can opt to pass no arguments to setup.
+  const player = new Plyr('#player');
+  
+  // Expose
+  window.player = player;
+
+  // Bind event listener
+  function on(selector, type, callback) {
+    document.querySelector(selector).addEventListener(type, callback, false);
+  }
+
+  // Play
+  on('.js-play', 'click', () => { 
+    player.play();
+  });
+
+  // Pause
+  on('.js-pause', 'click', () => { 
+    player.pause();
+  });
+
+  // Stop
+  on('.js-stop', 'click', () => { 
+    player.stop();
+  });
+
+  // Rewind
+  on('.js-rewind', 'click', () => { 
+    player.rewind();
+  });
+
+  // Forward
+  on('.js-forward', 'click', () => { 
+    player.forward();
+  });
+});
 </script>
 	</footer>
 	
